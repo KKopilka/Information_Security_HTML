@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Вход</title>
+    </head>
+
+    <body>
+        <p>
+            Имя пользователя:
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ us_name }}"/>
+            <input type="submit">
+        </form>
+        <p>
+           Пароль:
+        </p>
+        <form method="post">
+            <input type="text" name="password" value="{{ password }}"/>
+            <input type="submit">
+        </form>
+
+        <button onclick="window.location.href = 'https://github.com/KKopilka';">Войти</button>
+        <br>
+        <br>
+        <button onclick="window.location.href = 'file:///C:/Users/79266/Desktop/python_prog/lab2/templates/change_password.html';">Сменить пароль</button>
+        <br>
+        <br>
+        <button onclick="window.location.href = 'file:///C:/Users/79266/Desktop/python_prog/lab2/templates/sign_up.html';">Регистрация</button>
+    </body>
+</html>

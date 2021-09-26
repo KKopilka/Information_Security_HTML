@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Регистрация</title>   
+    </head>
+
+    <body>
+    <div style="border:3px #000000  solid; width: 275px; padding: 5px 0 5px 15px;">
+        <p>
+            Имя пользователя:
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ us_name }}"/>
+            <input type="submit">
+        </form>
+
+        <p>
+            Пароль:
+        </p>
+        <form method="post">
+            <input type="text" name="password" value="{{ password }}"/>
+            <input type="submit">
+        </form>
+    </div>
+        <br>
+
+    <div style="border:3px #000000  solid; width: 275px; padding: 5px 0 5px 15px;"> 
+        <p>
+            Фамилия:
+        </p>
+        <form method="post">
+            <input type="text" name="surname" value="{{ surname }}"/>
+            <input type="submit">
+        </form>
+   
+        <p>
+            Имя:
+        </p>
+        <form method="post">
+            <input type="text" name="name" value="{{ name }}"/>
+            <input type="submit">
+        </form>
+  
+        <p>
+            Отчество:
+        </p>
+        <form method="post">
+            <input type="text" name="midd_name" value="{{ midd_name }}"/>
+            <input type="submit">
+        </form>
+    </div>
+        <br>
+        
+    <div style="border:3px #000000  solid; width: 275px; padding: 5px 0 5px 15px;">
+        <p>
+            Дата рождения:
+        </p>
+        <form method="post">
+            <input type="text" name="date" value="{{ date }}"/>
+            <input type="submit">
+        </form>
+    
+        <p>
+            Место рождения:
+        </p>
+        <form method="post">
+            <input type="text" name="place" value="{{ place }}"/>
+            <input type="submit">
+        </form>
+  
+        <p>
+            Телефон:
+        </p>
+        <form method="post">
+            <input type="text" name="number" value="{{ number }}"/>
+            <input type="submit">
+        </form>
+    </div>
+    <br>
+
+        <button onclick="window.location.href = 'https://github.com/KKopilka';">Сохранить</button>
+
+    </body>
+</html>

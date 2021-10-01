@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Генерация пароля</title>
+    </head>
+    <body>
+        <p>
+            Р(вероятность):
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ probability }}"/>
+            <input type="submit">
+        </form>
+
+        <p>
+            V(скорость перебра):
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ speed }}"/>
+            <input type="submit">
+        </form>
+
+        <p>
+            T(Срок действия пароля):
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ period }}"/>
+            <input type="submit">
+        </form>
+
+        
+    </body>
+</html>

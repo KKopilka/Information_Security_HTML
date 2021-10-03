@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Генерация пароля</title>
+    </head>
+    <body>
+         
+        <p>
+            Р(вероятность):
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ probability }}"/>
+            <input type="submit">
+        </form>
+
+        <p>
+            V(скорость перебра):
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ speed }}"/>
+            <input type="submit">
+        </form>
+
+        <p>
+            T(Срок действия пароля):
+        </p>
+        <form method="post">
+            <input type="text" name="us_name" value="{{ period }}"/>
+            <input type="submit">
+        </form>
+
+        <p>
+            S*(нижняя граница паролей): {{ result1 }}
+        </p>
+
+        <p>
+            A (мощность алфавита): {{ result2 }}
+        </p>
+
+        <p>
+            L (длина пароля): {{ result3 }}
+        </p>
+
+        <b>
+            Пароль: {{ password }}
+        </b>
+        <br>
+        <br>
+        <button>Сформировать пароль</button>
+
+        <form name="parameters" method="get" style="padding-left: 300px; bottom: 1000px;">
+            <input type="checkbox" name="parameter" value="lat_big" <!checked="checked" />Латинские большие<br/>
+            <input type="checkbox" name="parameter" value="lat_small"/>Латинские маленькие<br/>
+            <input type="checkbox" name="parameter" value="rus_big"/>Русские большие<br/>
+            <input type="checkbox" name="parameter" value="rus_small"/>Русские маленькие<br/>
+            <input type="checkbox" name="parameter" value="symbols"/>Символы<br/>
+            <input type="checkbox" name="parameter" value="numders"/>Цифры<br/>
+            <input type="submit" value="OK"/>
+            <input type="reset" value="Reset"/>
+        </form>
+    </body>
+</html>

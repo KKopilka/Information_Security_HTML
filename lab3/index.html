@@ -2,18 +2,9 @@
     <head>
         <title>Генерация пароля</title>
     </head>
-    <body>
-        <form name="parameters" method="get" style="padding: 0px 0px 0px 300px;">
-            <input type="checkbox" name="parameter" value="lat_big" <!checked="checked" />Латинские большие<br/>
-            <input type="checkbox" name="parameter" value="lat_small"/>Латинские маленькие<br/>
-            <input type="checkbox" name="parameter" value="rus_big"/>Русские большие<br/>
-            <input type="checkbox" name="parameter" value="rus_small"/>Русские маленькие<br/>
-            <input type="checkbox" name="parameter" value="symbols"/>Символы<br/>
-            <input type="checkbox" name="parameter" value="numders"/>Цифры<br/>
-            <input type="submit" value="OK"/>
-            <input type="reset" value="Reset"/>
-        </form>
-        <div style="padding: 1000px 0px -100px 0px;">
+    <body style="display: flex;">
+        
+        <div>
         <p>
             Р(вероятность):
         </p>
@@ -57,5 +48,15 @@
         <br>
         <button>Сформировать пароль</button>
     </div>  
+    <form name="parameters" method="get" style="padding: 10px 10px 0px 50px;">
+        <input type="checkbox" name="parameter" value="lat_big" <!checked="checked" />Латинские большие<br/>
+        <input type="checkbox" name="parameter" value="lat_small"/>Латинские маленькие<br/>
+        <input type="checkbox" name="parameter" value="rus_big"/>Русские большие<br/>
+        <input type="checkbox" name="parameter" value="rus_small"/>Русские маленькие<br/>
+        <input type="checkbox" name="parameter" value="symbols"/>Символы<br/>
+        <input type="checkbox" name="parameter" value="numders"/>Цифры<br/>
+        <input type="submit" value="OK"/>
+        <input type="reset" value="Reset"/>
+    </form>
     </body>
 </html>

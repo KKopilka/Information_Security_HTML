@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №4</title>
+</head>
+<body>
+    <h1>Методы хэширования</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <p>
+            Сообщение
+        </p>
+        <input name="message" value="{{ form.message }}"/>
+        <input name="maxval" value="{{ form.maxval }}"/>
+        <input type="submit" value="Сформировать"/>
+        <p>{{ form.error }}</p>
+        <p>Метод контрольных сумм: {{ form.result1 }}</p>
+        <p>Метод хэширования с применением гаммирования:  {{ form.result2 }}</p>
+    </form>
+</body>
+</html>
